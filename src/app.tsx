@@ -14,6 +14,11 @@ const App: Component = (props: { children: Element }) => {
             </A>
           </li>
           <li class="py-2 px-4">
+            <A href="/gallery" class="no-underline hover:underline">
+              Gallery
+            </A>
+          </li>
+          <li class="py-2 px-4">
             <A href="/about" class="no-underline hover:underline">
               About
             </A>
@@ -36,8 +41,7 @@ const App: Component = (props: { children: Element }) => {
         </ul>
       </nav>
 
-      <main class="max-w-2xl mx-auto h-screen flex flex-col justify-center px-4">
-        <h1 class="text-5xl mx-auto mb-8 text-slate-600 font-light">Welcome to my Solid app!</h1>
+      <main class="mx-auto h-screen px-4">
         <Suspense>{props.children}</Suspense>
       </main>
     </div>

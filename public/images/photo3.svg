@@ -1,0 +1,5 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="600" fill="#059669"/>
+  <circle cx="400" cy="300" r="150" fill="#10B981" opacity="0.7"/>
+  <text x="400" y="310" font-family="Arial, sans-serif" font-size="32" fill="white" text-anchor="middle">Forest Path</text>
+</svg>
