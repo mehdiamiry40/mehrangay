@@ -1,4 +1,4 @@
-# Minimalist Photo Portfolio
+# Mehran is Gay
 
 A simple, modern, and minimalist photo portfolio built with Next.js and Tailwind CSS.
 

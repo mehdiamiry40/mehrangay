@@ -7,7 +7,7 @@ import Footer from "./components/Footer";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Minimalist Portfolio",
+  title: "Mehran is Gay",
   description: "A simple modern minimalist photo portfolio",
 };
 
