@@ -5,41 +5,36 @@ const App: Component = (props: { children: Element }) => {
   const location = useLocation();
 
   return (
-    <div>
-      <nav class="bg-slate-100 text-slate-900 px-4">
-        <ul class="flex items-center">
-          <li class="py-2 px-4">
-            <A href="/" class="no-underline hover:underline">
-              Home
+    <div class="min-h-screen bg-slate-50">
+      <nav class="bg-slate-800 text-white px-4 shadow-lg">
+        <ul class="flex items-center max-w-6xl mx-auto">
+          <li class="py-4 px-4">
+            <A href="/" class="no-underline hover:text-slate-300 font-medium text-lg">
+              📷 Photo Gallery
             </A>
           </li>
-          <li class="py-2 px-4">
-            <A href="/about" class="no-underline hover:underline">
+          <li class="py-4 px-4 ml-auto">
+            <A href="/gallery" class="no-underline hover:text-slate-300">
+              Gallery
+            </A>
+          </li>
+          <li class="py-4 px-4">
+            <A href="/about" class="no-underline hover:text-slate-300">
               About
             </A>
-          </li>
-          <li class="py-2 px-4">
-            <A href="/error" class="no-underline hover:underline">
-              Error
-            </A>
-          </li>
-
-          <li class="text-sm flex items-center space-x-1 ml-auto">
-            <span>URL:</span>
-            <input
-              class="w-75px p-1 bg-white text-sm rounded-lg"
-              type="text"
-              readOnly
-              value={location.pathname}
-            />
           </li>
         </ul>
       </nav>
 
-      <main class="max-w-2xl mx-auto h-screen flex flex-col justify-center px-4">
-        <h1 class="text-5xl mx-auto mb-8 text-slate-600 font-light">Welcome to my Solid app!</h1>
+      <main class="max-w-6xl mx-auto px-4 py-12">
         <Suspense>{props.children}</Suspense>
       </main>
+
+      <footer class="bg-slate-800 text-white text-center py-6 mt-12">
+        <p class="text-sm text-slate-400">
+          © 2024 Personal Photo Gallery. All rights reserved.
+        </p>
+      </footer>
     </div>
   );
 };

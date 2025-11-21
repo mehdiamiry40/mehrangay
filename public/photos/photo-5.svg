@@ -1,0 +1,8 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="600" fill="#1a202c"/>
+  <circle cx="600" cy="150" r="60" fill="#fbd38d"/>
+  <rect x="100" y="400" width="150" height="200" fill="#2d3748"/>
+  <rect x="300" y="350" width="120" height="250" fill="#4a5568"/>
+  <rect x="500" y="420" width="180" height="180" fill="#2d3748"/>
+  <text x="400" y="320" font-family="Arial" font-size="24" fill="#ffffff" text-anchor="middle">City Skyline</text>
+</svg>
