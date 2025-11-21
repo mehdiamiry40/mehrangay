@@ -1,36 +1,44 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Minimalist Photo Portfolio
+
+A simple, modern, and minimalist photo portfolio built with Next.js and Tailwind CSS.
+
+## Features
+
+- **Minimalist Design**: Clean layout focusing on the photography.
+- **Responsive Grid**: Adapts to different screen sizes (mobile, tablet, desktop).
+- **Fast Loading**: Optimized images using Next.js Image component.
+- **Dark Mode Support**: Respects system preference (configured in Tailwind).
 
 ## Getting Started
 
-First, run the development server:
+1.  **Install dependencies**:
+    ```bash
+    npm install
+    ```
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+2.  **Run the development server**:
+    ```bash
+    npm run dev
+    ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+3.  **Open the browser**:
+    Navigate to [http://localhost:3000](http://localhost:3000).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Customization
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Adding Your Photos
 
-## Learn More
+1.  Open `app/components/PhotoGrid.tsx`.
+2.  Replace the `PHOTOS` array with your own image data.
+    - You can use local images by placing them in the `public` folder and referencing them like `/my-image.jpg`.
+    - Or use external URLs (make sure to update `next.config.ts` if using a new domain).
 
-To learn more about Next.js, take a look at the following resources:
+### updating Text
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **Home Title**: Edit `app/page.tsx`.
+- **About Page**: Edit `app/about/page.tsx`.
+- **Header/Footer**: Edit `app/components/Header.tsx` and `app/components/Footer.tsx`.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Deployment
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+The easiest way to deploy is using [Vercel](https://vercel.com).
