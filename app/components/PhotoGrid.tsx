@@ -1,15 +1,13 @@
 import Image from 'next/image';
 
 const PHOTOS = [
-  { id: 1, src: 'https://picsum.photos/seed/1/800/1000', alt: 'Photo 1', aspect: 'aspect-[4/5]' },
-  { id: 2, src: 'https://picsum.photos/seed/2/800/600', alt: 'Photo 2', aspect: 'aspect-[4/3]' },
-  { id: 3, src: 'https://picsum.photos/seed/3/800/1000', alt: 'Photo 3', aspect: 'aspect-[4/5]' },
-  { id: 4, src: 'https://picsum.photos/seed/4/800/800', alt: 'Photo 4', aspect: 'aspect-square' },
-  { id: 5, src: 'https://picsum.photos/seed/5/800/1000', alt: 'Photo 5', aspect: 'aspect-[4/5]' },
-  { id: 6, src: 'https://picsum.photos/seed/6/800/600', alt: 'Photo 6', aspect: 'aspect-[4/3]' },
-  { id: 7, src: 'https://picsum.photos/seed/7/800/800', alt: 'Photo 7', aspect: 'aspect-square' },
-  { id: 8, src: 'https://picsum.photos/seed/8/800/1000', alt: 'Photo 8', aspect: 'aspect-[4/5]' },
-  { id: 9, src: 'https://picsum.photos/seed/9/800/600', alt: 'Photo 9', aspect: 'aspect-[4/3]' },
+  { id: 1, src: '/c51142e3-7251-48ff-919a-d11ababc4159.jpg', alt: 'Portfolio Photo 1', aspect: 'aspect-[4/5]' },
+  { id: 2, src: '/IMG_1355.PNG', alt: 'Portfolio Photo 2', aspect: 'aspect-[4/5]' },
+  { id: 3, src: '/IMG_1480.PNG', alt: 'Portfolio Photo 3', aspect: 'aspect-[4/5]' },
+  { id: 4, src: '/IMG_1481.jpg', alt: 'Portfolio Photo 4', aspect: 'aspect-[4/5]' },
+  { id: 5, src: '/IMG_1508.PNG', alt: 'Portfolio Photo 5', aspect: 'aspect-[4/5]' },
+  { id: 6, src: '/IMG_1590.PNG', alt: 'Portfolio Photo 6', aspect: 'aspect-[4/5]' },
+  { id: 7, src: '/IMG_1744.PNG', alt: 'Portfolio Photo 7', aspect: 'aspect-[4/5]' },
 ];
 
 export default function PhotoGrid() {
@@ -32,4 +30,3 @@ export default function PhotoGrid() {
     </div>
   );
 }
-
