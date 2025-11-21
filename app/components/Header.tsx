@@ -9,12 +9,6 @@ export default function Header() {
         </Link>
         
         <nav className="flex gap-6 text-sm font-medium text-gray-600 dark:text-gray-300">
-          <Link href="/" className="hover:text-black dark:hover:text-white transition-colors">
-            Work
-          </Link>
-          <Link href="/about" className="hover:text-black dark:hover:text-white transition-colors">
-            About
-          </Link>
         </nav>
       </div>
     </header>
