@@ -7,7 +7,7 @@ const PHOTOS = [
 
 export default function PhotoGrid() {
   return (
-    <div className="w-full grid grid-cols-1 gap-6">
+    <div className="grid grid-cols-1 md:grid-cols-3 gap-6 w-full">
       {PHOTOS.map((photo) => (
         <div key={photo.id} className="group relative overflow-hidden bg-gray-100 dark:bg-neutral-900">
           <div className={`${photo.aspect} relative w-full`}>

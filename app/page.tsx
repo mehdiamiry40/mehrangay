@@ -9,8 +9,8 @@ export default function Home() {
         </h1>
       </section>
       
-      <div className="flex justify-center">
-        <div className="max-w-md w-full">
+      <div className="flex justify-center px-6">
+        <div className="w-full max-w-6xl">
           <PhotoGrid />
         </div>
       </div>
