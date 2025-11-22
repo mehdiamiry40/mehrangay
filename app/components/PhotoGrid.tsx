@@ -2,11 +2,12 @@ import Image from 'next/image';
 
 const PHOTOS = [
   { id: 1, src: '/IMG_1481.jpg', alt: 'Portfolio Photo 1', aspect: 'aspect-[4/5]' },
+  { id: 2, src: '/IMG_1355.PNG', alt: 'Portfolio Photo 2', aspect: 'aspect-[4/5]' },
 ];
 
 export default function PhotoGrid() {
   return (
-    <div className="w-full">
+    <div className="w-full grid grid-cols-1 gap-6">
       {PHOTOS.map((photo) => (
         <div key={photo.id} className="group relative overflow-hidden bg-gray-100 dark:bg-neutral-900">
           <div className={`${photo.aspect} relative w-full`}>
